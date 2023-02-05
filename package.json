@@ -10,12 +10,16 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@editorjs/editorjs": "^2.26.5",
     "@strapi/plugin-i18n": "4.2.2",
     "@strapi/plugin-users-permissions": "4.2.2",
     "@strapi/strapi": "4.2.2",
     "better-sqlite3": "7.4.6",
     "pg": "^8.7.3",
-    "strapi-plugin-duplicate-button": "^1.0.4"
+    "strapi-plugin-duplicate-button": "^1.0.4",
+    "strapi-plugin-import-export-entries": "^1.18.0",
+    "strapi-plugin-react-editorjs": "^2.0.2",
+    "strapi-plugin-slugify": "^2.3.2"
   },
   "author": {
     "name": "A Strapi developer"
