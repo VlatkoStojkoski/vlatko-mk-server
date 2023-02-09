@@ -27,12 +27,10 @@
       "type": "string",
       "regex": "(.+(\\, )?)+"
     },
-    "blog_post": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::blog-post.blog-post"
-    },
     "links": {
+      "type": "string"
+    },
+    "short": {
       "type": "string"
     }
   }
