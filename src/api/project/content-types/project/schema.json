@@ -13,25 +13,33 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "thumbnail": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images"
       ]
     },
-    "tags": {
+    "short": {
       "type": "string",
-      "regex": "(.+(\\, )?)+"
+      "required": true
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "priority": {
+      "type": "integer",
+      "required": true
     },
     "links": {
-      "type": "string"
-    },
-    "short": {
-      "type": "string"
+      "type": "json",
+      "required": true
     }
   }
 }
